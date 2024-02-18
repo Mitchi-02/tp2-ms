@@ -1,5 +1,6 @@
 package com.esisba.msscolarite.entities;
 
+import com.esisba.msscolarite.model.Formation;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -28,4 +29,9 @@ public class Etudiant {
 
     @ManyToOne
     private Etablissement etablissement;
+
+    private Long id_formation;
+
+    @Transient
+    private Formation formation;
 }
