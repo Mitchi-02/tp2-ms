@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d018ef4c-a796-4348-9fb1-41ea3554038e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/ms-scolarite/src/main/java/com/esisba/msscolarite/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-scolarite/src/main/java/com/esisba/msscolarite/model/Formation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ms-scolarite/src/main/java/com/esisba/msscolarite/proxy/FormationProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-bourse/src/main/java/com/esisba/msbourse/controllers/Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-bourse/src/main/java/com/esisba/msbourse/entities/Etudiant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-bourse/src/main/java/com/esisba/msbourse/entities/Virement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-bourse/src/main/java/com/esisba/msbourse/repositories/EtudiantRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-bourse/src/main/java/com/esisba/msbourse/repositories/VirementRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-scolarite/src/main/java/com/esisba/msscolarite/model/Virement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ms-scolarite/src/main/java/com/esisba/msscolarite/proxy/VirementProxy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-bourse/src/main/java/com/esisba/msbourse/MsBourseApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-bourse/src/main/java/com/esisba/msbourse/MsBourseApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-bourse/src/test/java/com/esisba/msbourse/MsBourseApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-bourse/src/test/java/com/esisba/msbourse/MsVirementApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-scolarite/src/main/java/com/esisba/msscolarite/MsScolariteApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-scolarite/src/main/java/com/esisba/msscolarite/MsScolariteApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ms-scolarite/src/main/java/com/esisba/msscolarite/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-scolarite/src/main/java/com/esisba/msscolarite/controller/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ms-scolarite/src/main/java/com/esisba/msscolarite/entities/Etudiant.java" beforeDir="false" afterPath="$PROJECT_DIR$/ms-scolarite/src/main/java/com/esisba/msscolarite/entities/Etudiant.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,38 +52,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;Spring Boot.MsFormationApplication.executor&quot;: &quot;Run&quot;,
-    &quot;Spring Boot.MsScolariteApplication.executor&quot;: &quot;Run&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/ilyasbenhammadi/dev/ms/tp2/tp2/ms-formation/src/main/java/com/esisba/msformation&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.MsBourseApplication.executor": "Run",
+    "Spring Boot.MsFormationApplication.executor": "Run",
+    "Spring Boot.MsScolariteApplication.executor": "Run",
+    "git-widget-placeholder": "master",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/ilyasbenhammadi/dev/ms/tp2/tp2/ms-formation/src/main/java/com/esisba/msformation",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/ms-formation/src/main/java/com/esisba/msformation" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.esisba.msbourse.repositories" />
+      <recent name="com.esisba.msbourse.entities" />
+      <recent name="com.esisba.msscolarite.model" />
+      <recent name="com.esisba.msscolarite.proxy" />
       <recent name="com.esisba.msscolarite.repositories" />
-      <recent name="com.esisba.msscolarite.entities" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -136,7 +147,9 @@
       <updated>1708210898929</updated>
       <workItem from="1708210900225" duration="637000" />
       <workItem from="1708211544857" duration="2580000" />
-      <workItem from="1708253125725" duration="1091000" />
+      <workItem from="1708253125725" duration="1404000" />
+      <workItem from="1708355123571" duration="2030000" />
+      <workItem from="1708416736981" duration="5966000" />
     </task>
     <servers />
   </component>

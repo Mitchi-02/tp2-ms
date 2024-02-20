@@ -29,10 +29,10 @@ public class MsScolariteApplication implements CommandLineRunner {
         Etablissement e1 = etablissementRepository.save(new Etablissement(null, "java", null));
         Etablissement e2 = etablissementRepository.save(new Etablissement(null, "angular", null));
 
-        Etudiant et1 = etudiantRepository.save(new Etudiant(null, "malki", Date.valueOf("1999-01-01"), "4isi", null, e1, 1L, null));
-        Etudiant et2 = etudiantRepository.save(new Etudiant(null, "ali", Date.valueOf("1995-08-11"), "4siw", null, e1, 2L, null));
-        Etudiant et3 = etudiantRepository.save(new Etudiant(null, "karim", Date.valueOf("1996-11-22"), "MasterSiC", null, e2, 1L, null));
-        Etudiant et4 = etudiantRepository.save(new Etudiant(null, "fouad", Date.valueOf("2000-02-15"), "MasterSiR", null, e2, 2L, null));
+        Etudiant et1 = etudiantRepository.save(new Etudiant(null, "malki", Date.valueOf("1999-01-01"), "4isi", null, e1, 1L, null, null));
+        Etudiant et2 = etudiantRepository.save(new Etudiant(null, "ali", Date.valueOf("1995-08-11"), "4siw", null, e1, 2L, null, null));
+        Etudiant et3 = etudiantRepository.save(new Etudiant(null, "karim", Date.valueOf("1996-11-22"), "MasterSiC", null, e2, 1L, null, null));
+        Etudiant et4 = etudiantRepository.save(new Etudiant(null, "fouad", Date.valueOf("2000-02-15"), "MasterSiR", null, e2, 2L, null, null));
 
     }
 }

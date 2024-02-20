@@ -1,5 +1,6 @@
 package com.esisba.msscolarite.entities;
 
+import com.esisba.msscolarite.model.Virement;
 import com.esisba.msscolarite.model.Formation;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -7,6 +8,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.util.Date;
+import java.util.List;
 
 @Entity
 @Data
@@ -34,4 +36,7 @@ public class Etudiant {
 
     @Transient
     private Formation formation;
+
+    @Transient
+    private List<Virement> virements;
 }
