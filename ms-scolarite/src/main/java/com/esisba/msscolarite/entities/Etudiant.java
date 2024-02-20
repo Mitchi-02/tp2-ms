@@ -32,7 +32,7 @@ public class Etudiant {
     @ManyToOne
     private Etablissement etablissement;
 
-    private Long id_formation;
+    private Long formation_id;
 
     @Transient
     private Formation formation;

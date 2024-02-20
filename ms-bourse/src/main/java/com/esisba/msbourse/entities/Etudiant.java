@@ -16,6 +16,9 @@ public class Etudiant {
     @Id
     private Long id;
 
+    @Column(unique = true)
+    private Long NCompteCCP;
+
     private String salaireParent;
 
     private boolean situationImpot;

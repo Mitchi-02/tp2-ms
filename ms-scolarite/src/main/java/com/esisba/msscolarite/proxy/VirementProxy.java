@@ -11,5 +11,5 @@ import java.util.List;
 @FeignClient(name = "ms-bourse", url = "localhost:8083")
 public interface VirementProxy {
     @GetMapping("/api/virements/{etudiant_id}")
-    public List<Object> getVirementByEtudiantId(@PathVariable("etudiant_id") Long etudiant_id);
+    public List<Virement> getVirementByEtudiantId(@PathVariable("etudiant_id") Long etudiant_id);
 }

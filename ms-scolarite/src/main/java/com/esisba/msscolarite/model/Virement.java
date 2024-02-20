@@ -17,4 +17,5 @@ public class Virement {
     private long id;
     private String montant;
     private Date dateVirement;
+    private Long NCompteCCP;
 }

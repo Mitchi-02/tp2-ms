@@ -26,5 +26,9 @@ public class Virement {
     @JsonIgnore
     @ToString.Exclude
     @ManyToOne
+    @JoinColumn(referencedColumnName = "NCompteCCP", name = "NCompteCCP")
     private Etudiant etudiant;
+
+    @Transient
+    private Long NCompteCCP;
 }

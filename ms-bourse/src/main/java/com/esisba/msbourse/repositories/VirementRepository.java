@@ -8,5 +8,5 @@ import java.util.List;
 
 @RepositoryRestController
 public interface VirementRepository extends JpaRepository<Virement, Long> {
-    List<Virement> getVirementByEtudiant_Id(Long id);
+    List<Virement> getAllByEtudiant_Id(Long id);
 }
